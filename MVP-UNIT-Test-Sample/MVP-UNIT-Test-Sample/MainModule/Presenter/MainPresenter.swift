@@ -14,7 +14,7 @@ protocol MainViewPresenterProtocol: AnyObject {
 
 // создаем непосредственно Presentor подписываем на протокол, те на абстракцию
 
-class mainPresentor: MainViewPresenterProtocol {
+class mainPresenter: MainViewPresenterProtocol {
     // объявляем view чтобы presentor управлял моделью
     // view может быть любая абстрактная вью подписанная на протокол
     // в unit тестах мы можем поместить mock view

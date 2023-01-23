@@ -18,6 +18,8 @@
 		A1030224297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */; };
 		A1030231297A5D17001FF782 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030230297A5D17001FF782 /* Person.swift */; };
 		A1030233297A5DCC001FF782 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030232297A5DCC001FF782 /* MainPresenter.swift */; };
+		A11C6272297E63EB0084DC12 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11C6271297E63EB0084DC12 /* MainView.xib */; };
+		A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6273297E651E0084DC12 /* ModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_UNIT_Test_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1030230297A5D17001FF782 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A1030232297A5DCC001FF782 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		A11C6271297E63EB0084DC12 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		A11C6273297E651E0084DC12 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,8 @@
 		A10301FF297A5C29001FF782 /* MVP-UNIT-Test-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				A1030200297A5C29001FF782 /* AppDelegate.swift */,
-				A1030202297A5C29001FF782 /* SceneDelegate.swift */,
-				A1030230297A5D17001FF782 /* Person.swift */,
-				A1030232297A5DCC001FF782 /* MainPresenter.swift */,
-				A1030204297A5C29001FF782 /* MainViewController.swift */,
+				A11C626C297E63170084DC12 /* Application */,
+				A11C626D297E632C0084DC12 /* MainModule */,
 				A1030206297A5C29001FF782 /* Main.storyboard */,
 				A1030209297A5C2A001FF782 /* Assets.xcassets */,
 				A103020B297A5C2A001FF782 /* LaunchScreen.storyboard */,
@@ -131,6 +132,51 @@
 				A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */,
 			);
 			path = "MVP-UNIT-Test-SampleUITests";
+			sourceTree = "<group>";
+		};
+		A11C626C297E63170084DC12 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A1030200297A5C29001FF782 /* AppDelegate.swift */,
+				A1030202297A5C29001FF782 /* SceneDelegate.swift */,
+				A11C6273297E651E0084DC12 /* ModuleBuilder.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A11C626D297E632C0084DC12 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				A11C626F297E63690084DC12 /* Model */,
+				A11C626E297E63540084DC12 /* View */,
+				A11C6270297E63740084DC12 /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		A11C626E297E63540084DC12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1030204297A5C29001FF782 /* MainViewController.swift */,
+				A11C6271297E63EB0084DC12 /* MainView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A11C626F297E63690084DC12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1030230297A5D17001FF782 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A11C6270297E63740084DC12 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A1030232297A5DCC001FF782 /* MainPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A103020D297A5C2A001FF782 /* LaunchScreen.storyboard in Resources */,
+				A11C6272297E63EB0084DC12 /* MainView.xib in Resources */,
 				A103020A297A5C2A001FF782 /* Assets.xcassets in Resources */,
 				A1030208297A5C29001FF782 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +316,7 @@
 				A1030201297A5C29001FF782 /* AppDelegate.swift in Sources */,
 				A1030231297A5D17001FF782 /* Person.swift in Sources */,
 				A1030203297A5C29001FF782 /* SceneDelegate.swift in Sources */,
+				A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
