@@ -4,7 +4,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var greetlintLabel: UILabel!
     
-    private var presenter: MainViewPresenterProtocol!
+    var presenter: MainViewPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
