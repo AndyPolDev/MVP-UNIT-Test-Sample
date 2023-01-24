@@ -16,7 +16,6 @@
 		A1030218297A5C2A001FF782 /* MVP_UNIT_Test_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030217297A5C2A001FF782 /* MVP_UNIT_Test_SampleTests.swift */; };
 		A1030222297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030221297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITests.swift */; };
 		A1030224297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */; };
-		A1030231297A5D17001FF782 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030230297A5D17001FF782 /* Person.swift */; };
 		A1030233297A5DCC001FF782 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030232297A5DCC001FF782 /* MainPresenter.swift */; };
 		A11C6272297E63EB0084DC12 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11C6271297E63EB0084DC12 /* MainView.xib */; };
 		A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6273297E651E0084DC12 /* ModuleBuilder.swift */; };
@@ -56,7 +55,6 @@
 		A103021D297A5C2A001FF782 /* MVP-UNIT-Test-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-UNIT-Test-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1030221297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_UNIT_Test_SampleUITests.swift; sourceTree = "<group>"; };
 		A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_UNIT_Test_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A1030230297A5D17001FF782 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A1030232297A5DCC001FF782 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A11C6271297E63EB0084DC12 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		A11C6273297E651E0084DC12 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 		A11C626F297E63690084DC12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A1030230297A5D17001FF782 /* Person.swift */,
 				A12410D0297FD06100B1ADE3 /* CommentsModel.swift */,
 			);
 			path = Model;
@@ -340,7 +337,6 @@
 				A1030205297A5C29001FF782 /* MainViewController.swift in Sources */,
 				A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */,
 				A1030201297A5C29001FF782 /* AppDelegate.swift in Sources */,
-				A1030231297A5D17001FF782 /* Person.swift in Sources */,
 				A1030203297A5C29001FF782 /* SceneDelegate.swift in Sources */,
 				A12410D1297FD06100B1ADE3 /* CommentsModel.swift in Sources */,
 				A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */,
