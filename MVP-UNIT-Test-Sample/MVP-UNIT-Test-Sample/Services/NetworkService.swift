@@ -2,7 +2,6 @@ import Foundation
 
 protocol NetworkServiceProtocol {
     func getComments(completion: @escaping (Result<[Comment]?, Error>) -> Void)
-    
 }
 
 class NetworkService: NetworkServiceProtocol {

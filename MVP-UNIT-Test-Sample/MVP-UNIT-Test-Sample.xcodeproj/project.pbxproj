@@ -22,6 +22,7 @@
 		A11C6279297E78280084DC12 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6278297E78280084DC12 /* MainPresenterTest.swift */; };
 		A12410D1297FD06100B1ADE3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D0297FD06100B1ADE3 /* Comment.swift */; };
 		A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D3297FD2F400B1ADE3 /* NetworkService.swift */; };
+		A12410D72980047700B1ADE3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D62980047700B1ADE3 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A11C6278297E78280084DC12 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		A12410D0297FD06100B1ADE3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A12410D3297FD2F400B1ADE3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A12410D62980047700B1ADE3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				A11C626C297E63170084DC12 /* Application */,
 				A11C626D297E632C0084DC12 /* MainModule */,
+				A12410D52980044400B1ADE3 /* DetailModule */,
 				A12410D2297FD2BB00B1ADE3 /* Services */,
 				A1030206297A5C29001FF782 /* Main.storyboard */,
 				A1030209297A5C2A001FF782 /* Assets.xcassets */,
@@ -199,6 +202,22 @@
 				A12410D3297FD2F400B1ADE3 /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A12410D52980044400B1ADE3 /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				A12410D82980049B00B1ADE3 /* Presenter */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		A12410D82980049B00B1ADE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A12410D62980047700B1ADE3 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1030233297A5DCC001FF782 /* MainPresenter.swift in Sources */,
+				A12410D72980047700B1ADE3 /* DetailPresenter.swift in Sources */,
 				A1030205297A5C29001FF782 /* MainViewController.swift in Sources */,
 				A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */,
 				A1030201297A5C29001FF782 /* AppDelegate.swift in Sources */,
