@@ -23,6 +23,8 @@
 		A12410D1297FD06100B1ADE3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D0297FD06100B1ADE3 /* Comment.swift */; };
 		A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D3297FD2F400B1ADE3 /* NetworkService.swift */; };
 		A12410D72980047700B1ADE3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D62980047700B1ADE3 /* DetailPresenter.swift */; };
+		A12410DB29800BD200B1ADE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D929800BD200B1ADE3 /* DetailViewController.swift */; };
+		A12410DC29800BD200B1ADE3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12410DA29800BD200B1ADE3 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A12410D0297FD06100B1ADE3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A12410D3297FD2F400B1ADE3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A12410D62980047700B1ADE3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		A12410D929800BD200B1ADE3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A12410DA29800BD200B1ADE3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 		A12410D52980044400B1ADE3 /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
+				A12410DD29800BF800B1ADE3 /* View */,
 				A12410D82980049B00B1ADE3 /* Presenter */,
 			);
 			path = DetailModule;
@@ -218,6 +223,15 @@
 				A12410D62980047700B1ADE3 /* DetailPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A12410DD29800BF800B1ADE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12410D929800BD200B1ADE3 /* DetailViewController.swift */,
+				A12410DA29800BD200B1ADE3 /* DetailViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +341,7 @@
 				A103020D297A5C2A001FF782 /* LaunchScreen.storyboard in Resources */,
 				A11C6272297E63EB0084DC12 /* MainView.xib in Resources */,
 				A103020A297A5C2A001FF782 /* Assets.xcassets in Resources */,
+				A12410DC29800BD200B1ADE3 /* DetailViewController.xib in Resources */,
 				A1030208297A5C29001FF782 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +373,7 @@
 				A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */,
 				A1030201297A5C29001FF782 /* AppDelegate.swift in Sources */,
 				A1030203297A5C29001FF782 /* SceneDelegate.swift in Sources */,
+				A12410DB29800BD200B1ADE3 /* DetailViewController.swift in Sources */,
 				A12410D1297FD06100B1ADE3 /* Comment.swift in Sources */,
 				A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */,
 			);
