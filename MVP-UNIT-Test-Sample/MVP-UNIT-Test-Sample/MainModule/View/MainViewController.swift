@@ -15,18 +15,24 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        presenter.comments?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "test"
+        let comment = presenter.comments?[indexPath.row].email
+        cell.textLabel?.text = comment
         return cell
     }
 }
 
 extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
-        
+    func success() {
+        tableView.reloadData()
+    }
+    
+    func failure(error: Error) {
+        // Можно отобразить аллерт
+        print(error.localizedDescription)
     }
 }
