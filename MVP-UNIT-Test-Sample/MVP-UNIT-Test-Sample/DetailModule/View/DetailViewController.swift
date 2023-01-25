@@ -10,6 +10,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         presenter.setComment()
     }
+    
+    @IBAction func popToRootPressed(_ sender: UIButton) {
+        presenter.backToRootPressed()
+    }
 }
 
 extension DetailViewController: DetailViewProtocol {

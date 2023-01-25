@@ -18,13 +18,14 @@
 		A1030224297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */; };
 		A1030233297A5DCC001FF782 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1030232297A5DCC001FF782 /* MainPresenter.swift */; };
 		A11C6272297E63EB0084DC12 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11C6271297E63EB0084DC12 /* MainView.xib */; };
-		A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6273297E651E0084DC12 /* ModuleBuilder.swift */; };
+		A11C6274297E651E0084DC12 /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6273297E651E0084DC12 /* AsselderModuleBuilder.swift */; };
 		A11C6279297E78280084DC12 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C6278297E78280084DC12 /* MainPresenterTest.swift */; };
 		A12410D1297FD06100B1ADE3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D0297FD06100B1ADE3 /* Comment.swift */; };
 		A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D3297FD2F400B1ADE3 /* NetworkService.swift */; };
 		A12410D72980047700B1ADE3 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D62980047700B1ADE3 /* DetailPresenter.swift */; };
 		A12410DB29800BD200B1ADE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12410D929800BD200B1ADE3 /* DetailViewController.swift */; };
 		A12410DC29800BD200B1ADE3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12410DA29800BD200B1ADE3 /* DetailViewController.xib */; };
+		A1817B2C298119BC009208C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1817B2B298119BC009208C4 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +61,14 @@
 		A1030223297A5C2A001FF782 /* MVP_UNIT_Test_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_UNIT_Test_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1030232297A5DCC001FF782 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A11C6271297E63EB0084DC12 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		A11C6273297E651E0084DC12 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		A11C6273297E651E0084DC12 /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
 		A11C6278297E78280084DC12 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		A12410D0297FD06100B1ADE3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		A12410D3297FD2F400B1ADE3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A12410D62980047700B1ADE3 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		A12410D929800BD200B1ADE3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A12410DA29800BD200B1ADE3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A1817B2B298119BC009208C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A11C626C297E63170084DC12 /* Application */,
+				A1817B2D298119C1009208C4 /* Router */,
 				A11C626D297E632C0084DC12 /* MainModule */,
 				A12410D52980044400B1ADE3 /* DetailModule */,
 				A12410D2297FD2BB00B1ADE3 /* Services */,
@@ -152,7 +155,7 @@
 			children = (
 				A1030200297A5C29001FF782 /* AppDelegate.swift */,
 				A1030202297A5C29001FF782 /* SceneDelegate.swift */,
-				A11C6273297E651E0084DC12 /* ModuleBuilder.swift */,
+				A11C6273297E651E0084DC12 /* AsselderModuleBuilder.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -232,6 +235,14 @@
 				A12410DA29800BD200B1ADE3 /* DetailViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A1817B2D298119C1009208C4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A1817B2B298119BC009208C4 /* Router.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,13 +380,14 @@
 			files = (
 				A1030233297A5DCC001FF782 /* MainPresenter.swift in Sources */,
 				A12410D72980047700B1ADE3 /* DetailPresenter.swift in Sources */,
+				A1817B2C298119BC009208C4 /* Router.swift in Sources */,
 				A1030205297A5C29001FF782 /* MainViewController.swift in Sources */,
 				A12410D4297FD2F400B1ADE3 /* NetworkService.swift in Sources */,
 				A1030201297A5C29001FF782 /* AppDelegate.swift in Sources */,
 				A1030203297A5C29001FF782 /* SceneDelegate.swift in Sources */,
 				A12410DB29800BD200B1ADE3 /* DetailViewController.swift in Sources */,
 				A12410D1297FD06100B1ADE3 /* Comment.swift in Sources */,
-				A11C6274297E651E0084DC12 /* ModuleBuilder.swift in Sources */,
+				A11C6274297E651E0084DC12 /* AsselderModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
